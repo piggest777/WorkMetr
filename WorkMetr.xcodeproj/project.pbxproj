@@ -13,6 +13,10 @@
 		68083B9F20C16C100096CA43 /* WorkMetr.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 68083B9D20C16C100096CA43 /* WorkMetr.xcdatamodeld */; };
 		68083BA120C16C150096CA43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68083BA020C16C150096CA43 /* Assets.xcassets */; };
 		68083BA420C16C150096CA43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68083BA220C16C150096CA43 /* LaunchScreen.storyboard */; };
+		68083BAF20C183490096CA43 /* PickDateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68083BAE20C183490096CA43 /* PickDateVC.swift */; };
+		68083BB120C1836C0096CA43 /* PickTimeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68083BB020C1836C0096CA43 /* PickTimeVC.swift */; };
+		68083BB320C1A6670096CA43 /* TimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68083BB220C1A6670096CA43 /* TimeCell.swift */; };
+		68083BB620C1B0910096CA43 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68083BB520C1B0910096CA43 /* UIViewControllerExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		68083BA020C16C150096CA43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68083BA320C16C150096CA43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		68083BA520C16C150096CA43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68083BAE20C183490096CA43 /* PickDateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickDateVC.swift; sourceTree = "<group>"; };
+		68083BB020C1836C0096CA43 /* PickTimeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickTimeVC.swift; sourceTree = "<group>"; };
+		68083BB220C1A6670096CA43 /* TimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCell.swift; sourceTree = "<group>"; };
+		68083BB520C1B0910096CA43 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,7 @@
 		68083B9520C16C100096CA43 /* WorkMetr */ = {
 			isa = PBXGroup;
 			children = (
+				68083BB420C1B06D0096CA43 /* Ext */,
 				68083BAD20C17AEB0096CA43 /* Controller */,
 				68083BAC20C17ADB0096CA43 /* Model */,
 				68083BAB20C17AD40096CA43 /* View */,
@@ -72,6 +81,7 @@
 		68083BAB20C17AD40096CA43 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				68083BB220C1A6670096CA43 /* TimeCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -87,8 +97,18 @@
 			isa = PBXGroup;
 			children = (
 				68083B9820C16C100096CA43 /* DateTableVC.swift */,
+				68083BAE20C183490096CA43 /* PickDateVC.swift */,
+				68083BB020C1836C0096CA43 /* PickTimeVC.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		68083BB420C1B06D0096CA43 /* Ext */ = {
+			isa = PBXGroup;
+			children = (
+				68083BB520C1B0910096CA43 /* UIViewControllerExt.swift */,
+			);
+			path = Ext;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,8 +182,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68083BB320C1A6670096CA43 /* TimeCell.swift in Sources */,
 				68083B9920C16C100096CA43 /* DateTableVC.swift in Sources */,
+				68083BAF20C183490096CA43 /* PickDateVC.swift in Sources */,
+				68083BB120C1836C0096CA43 /* PickTimeVC.swift in Sources */,
 				68083B9F20C16C100096CA43 /* WorkMetr.xcdatamodeld in Sources */,
+				68083BB620C1B0910096CA43 /* UIViewControllerExt.swift in Sources */,
 				68083B9720C16C100096CA43 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
